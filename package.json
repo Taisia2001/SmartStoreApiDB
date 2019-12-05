@@ -1,0 +1,41 @@
+{
+  "name": "nit4",
+  "version": "1.0.0",
+  "description": "package for shop",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taisia2001/nit4Shop.git"
+  },
+  "author": "Taisiia Shutiak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Taisia2001/nit4Shop/issues"
+  },
+  "homepage": "https://github.com/Taisia2001/nit4Shop#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "path": "^0.12.7",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.5",
+    "socket.io": "^2.3.0"
+  }
+}

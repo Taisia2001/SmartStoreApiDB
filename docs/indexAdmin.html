@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmartStore</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="wrapper">
+<div class="headerMain">
+    <div class="header top">
+        <h1 id="logo">SmartStoreAdmin</h1>
+    </div>
+    <div>
+    <nav id="navigation" class="top_bottom top">
+    </nav></div>
+    <div>
+    <nav id="admin_features" class="top_bottom top">
+    </nav></div>
+</div>
+
+
+<!-- Modal -->
+    <div class="modal fade" id="productAddModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="product-c-title">Add Product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body" >
+                    <div id="createProd-content">
+                        <span>Name:  </span>
+                        <input id="nameP" type="text"><br><br>
+                        <span>Description:  </span>
+                        <input id="descriptionP" type="text"><br><br>
+                        <span>Image URL:  </span>
+                        <input id="image_urlP" type="text"><br><br>
+                        <span>Price:  </span>
+                        <input id="priceP" type="number"><br><br>
+                        <span>Special Price:  </span>
+                        <input id="special_priceP" type="number"><br><br>
+
+                    </div>
+                    <div>Categories:</div>
+                    <div id="categories"></div>
+                </div>
+                <div class="modal-footer prodC">
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="product-title" id="modalLabel">Product</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" >
+                <div id="product-content">
+                    <span class="empty">Description</span>
+                </div>
+            </div>
+            <div class="modal-footer prod">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="buyModalLabel">Add Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" >
+                <div id="buy-content">
+                    <span>Name:  </span>
+                    <input id="nameC" type="text"><br><br>
+                    <span>Description: </span>
+                    <input id="descriptionC" type="text"><br><br>
+                </div>
+                    <div>Products:</div>
+                    <div id="products"></div>
+
+            </div>
+
+            <div class="modal-footer bFoot">
+
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+    <div class="container">
+    </div>
+
+
+</main>
+    <footer class="footer top_bottom standard_el">SmartStore created by Taisiia Shutiak<br>©</footer></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+<script src="./js/adminGoods.js"></script>
+</body>
+</html>

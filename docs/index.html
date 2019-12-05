@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartStore</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="headerMain">
+    <div class="header top">
+      <h1 id="logo">SmartStore</h1>
+      <div class="cart">
+        <input type="image" id="cart_button" src="./img/cart.png" alt="Cart" data-toggle="modal" data-target="#cartModal"></input></div>
+      <div id="cart_number">0</div>
+    </div>
+    <nav id="navigation" class="top_bottom top">
+    </nav>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" >
+          <div id="cart-content">
+            <span class="empty">Your cart is empty</span>
+          </div>
+        </div>
+        <div id="cart_total"></div>
+        <div class="modal-footer" id="cart-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="product-title" id="modalLabel">Product</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" >
+          <div id="product-content">
+            <span class="empty">Description</span>
+          </div>
+        </div>
+        <div class="modal-footer prod">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="buyModalLabel">Buy</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" >
+          <div id="buy-content">
+            <span>Name:  </span>
+            <input id="name" type="text"><br><br>
+            <span>Phone: </span>
+            <input id="phone" type="number"><br><br>
+            <span>E-mail:  </span>
+            <input id="email" type="text">
+          </div>
+        </div>
+        <div class="modal-footer bFoot">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="container">
+    </div>
+
+
+  </main>
+  <footer class="footer top_bottom standard_el">SmartStore created by Taisiia Shutiak<br>©</footer></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+<script src="./js/goods.js"></script>
+</body>
+</html>
